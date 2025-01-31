@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+
+\usepackage{times,mathptm}
+\usepackage{pifont}
+\usepackage{exscale}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{epsfig}
+
+\textwidth 6.5in
+\textheight 9in
+\oddsidemargin -0.0in
+\topmargin -0.0in
+
+\parindent 0pt     % How much the first word of a paragraph is indented. 
+\parskip 0pt       % How much extra space to leave between paragraphs.
+
+\begin{document}
+
+\begin{center}             % If you only centering 1 line use \centerline{}
+\begin{LARGE}
+{\bf CSci 243 Homework 10}
+\end{LARGE}
+\vskip 0.25cm      % vertical skip (0.25 cm)
+
+Due: Monday Dec 4, end of day\\  % force new line
+**My name**
+\end{center}             % If you only centering 1 line use \centerline{}
+
+Although most answers to the problems below are just one number,
+ your responses should explain how this number was obtained.
+
+\begin{enumerate}
+
+\item A bowl contains 10 red balls and 10 blue balls.
+You select balls at random without looking at them.
+\begin{enumerate}
+\item (4 points) How many balls must you select to be sure of having at least three balls of the same color?
+\item (4 points) How many balls must you select to be sure of having at least three blue balls?
+\end{enumerate}
+
+
+\item (6 points) How many ordered pairs of integers $(a,b)$ are needed to guarantee that
+there are two ordered pairs $(a_1,b_1)$ and $(a_2,b_2)$ such that $a_1\bmod 5=a_2\bmod 5$ and
+$b_1\bmod 5=b_2\bmod 5$?
+
+\item (6 points) How many numbers must be selected from the set $\{1,3,5,7,9,11,13,15\}$ to guarantee that at least one pair of these numbers add up to 16?
+
+
+\item How many bit strings of length 12 contain
+\begin{enumerate}
+\item (3 points) exactly three 1s?
+\item (3 points) at most three 1s?
+\item (3 points) at least three 1s?
+\item (3 points) an equal number of 0s and 1s?
+\end{enumerate}
+
+\item (8 points)
+Assume $n$ distinct points on a circle and draw all line segments connecting each pair.
+Find the number of intersections of all these line segments inside the circle.
+Hint: You can find and analyze the formula recursively, using the formulas
+$\sum_{i=1}^n i^3 = n^2(n+1)^2/4$, $\sum_{i=1}^n i^2 = n(n+1)(2n+1)/6$ and lots of algebra.\\
+Alternative hint: observe that each intersection corrsponds to the diagonal of a rectangle. Use a combinatiorial method---no algebra needed.
+
+\end{enumerate}
+
+\end{document}

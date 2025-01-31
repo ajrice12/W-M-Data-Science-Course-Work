@@ -1,0 +1,69 @@
+\documentclass[11pt]{article}
+
+\usepackage{times,mathptm}
+\usepackage{pifont}
+\usepackage{exscale}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{epsfig}
+
+\textwidth 6.5in
+\textheight 9in
+\oddsidemargin -0.0in
+\topmargin -0.0in
+
+\parindent 0pt     % How much the first word of a paragraph is indented. 
+\parskip 0pt	   % How much extra space to leave between paragraphs.
+
+\begin{document}
+
+\begin{center}             % If you only centering 1 line use \centerline{}
+\begin{LARGE}
+{\bf CSci 243 Homework 1}
+\end{LARGE}
+\vskip 0.25cm      % vertical skip (0.25 cm)
+
+Due: Wednesday, Sep 13, end of day  \\  % force new line
+**My name**
+\end{center}
+
+
+\begin{enumerate}
+
+\item Construct a truth table for each of these compound propositions.
+\begin{enumerate}
+\item (3 points) $(p\lor \lnot q)\rightarrow q$
+\item (7 points) $(p\leftrightarrow q)\rightarrow (r\leftrightarrow s)$
+\end{enumerate}
+
+\item Understanding quantified predicates.
+\begin{enumerate}
+\item (3 points) English to quantified predicates: 
+Use predicates, quantifiers, logical and mathematical operators to express statement 
+``The absolute value of the sum of two integers does not exceed the sum of the absolute value of these integers''.
+\item (7 points) 
+Give the truth value of each of these statement if the domain of all variables consists of all real numbers. 
+Explain very briefly.
+\begin{enumerate}
+\item $\forall x\exists y (x^2 = y)$
+\item $\exists x\forall y (xy = 0)$
+\item $\forall x (x\neq 0 \rightarrow \exists y (xy=1))$
+\item $\exists x\forall y (y\neq 0 \rightarrow xy =1)$
+\item $\forall x\exists y (x+y=1)$
+\item $\forall x\exists y (x+y=2 \land 2x-y = 1)$
+\item $\forall x \forall y \exists z  (z=(x+y)/2)$
+\end{enumerate}
+\end{enumerate}
+
+\item (10 points) Rewrite each of these statements so that negations appear only within predicates, i.e., so that no negation is outside a quantifier or an expression involving logical operators.
+\begin{enumerate}
+\item $\lnot\exists x \exists y P(x,y)$
+\item $\lnot\forall x \exists y P(x,y)$
+\item $\lnot\exists y (Q(y) \land \forall x \lnot R(x,y))$
+\item $\lnot(\exists x R(x,y) \lor \forall x S(x,y))$
+\item $\lnot\exists y (\forall x \exists z T(x,y,z) \lor \exists x \forall z U(x,y,z))$
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}

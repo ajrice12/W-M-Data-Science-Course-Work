@@ -1,0 +1,105 @@
+\documentclass[11pt]{article}
+
+\usepackage{multicol}
+\usepackage{times,mathptm}
+\usepackage{pifont}
+\usepackage{exscale}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{epsfig}
+
+\textwidth 6.5in
+\textheight 9in
+\oddsidemargin -0.0in
+\topmargin -0.0in
+
+\parindent 0pt     % How much the first word of a paragraph is indented. 
+\parskip 0pt       % How much extra space to leave between paragraphs.
+
+\begin{document}
+
+\begin{center}             % If you only centering 1 line use \centerline{}
+\begin{LARGE}
+{\bf CSci 243 Homework 7}
+\end{LARGE}
+\vskip 0.25cm      % vertical skip (0.25 cm)
+
+Due: Wednesday, November 1, end of day \\  % force new line
+**My name**
+\end{center}
+
+\begin{enumerate}
+
+\item (10 points)
+What is the largest problem size $n$ that we can solve in no more than
+{\bf  one hour} using an algorithm that requires $f(n)$ operations,
+where each operation takes $10^{-9}$ seconds (this is close to a today's computer),
+with the following $f(n)$?
+\begin{multicols}{2}
+\begin{enumerate}
+\item $\log_2 n$
+\item $\log^4_2 n$
+\item $3n$
+\item $n\log_2 n$
+\item $n\log^2_2 n$
+\item $n^2$
+\item $(3n)^3$
+\item $2^n$
+\item $n!$
+\item $n^n$
+\end{enumerate}
+\end{multicols}
+
+
+\item (10 points) 
+Use pseudocode to describe an algorithm that determines whether a 
+given function from a finite set to another finite set is one-to-one. Assume that the function $f: A\rightarrow B$ is given as a set of pairs $\{(a_i,f(a_i))\in A\times B, \forall a_i\in A\}$ and that the sets
+$A =\{a_1,\ldots,a_m\}, B =\{b_1,\ldots,b_n\} $ are also given.
+
+\item (5 points)
+Describe an algorithm that produces the maximum, the minimum, and the mean, 
+of a set of $n$ real numbers, passing through the numbers once. 
+
+
+\item (10 points) 
+Consider the following pseudocode that finds $x$ in a list of sorted
+numbers by using ternary search. The algorithm is simlar to binary search, 
+only it splits the current list into three parts (instead of two) and checks 
+which part $x$ may be in. Thus at each step, the algorithm removes 2/3 of 
+the items in the current list.
+Find the complexity of the algorithm. Is it faster or slower asymptotically 
+than binary search?
+{\footnotesize
+\begin{verbatim}
+Algorithm TernarySearch(x int, a(1)...a(n) int, output: loc int)
+i=1; 
+j=n;
+remaining = j-i+1;
+while (remaining > 1)
+   interval = floor(remaining/3);
+   m1 = i+interval;
+   m2 = i+2*interval;
+   if (x <= a(m1)) 
+      j=m1;
+   else if (x<=a(m2))
+      i=m1+1;
+      j=m2;
+   else 
+      i=m2+1;
+   endelsif
+   remaining = j-i+1;
+endwhile
+
+if (remaining == 1 and x not equal a(i)) return loc=0;
+else return loc = j;
+\end{verbatim}
+}
+
+\item (5 points) Use bubble sort to sort 1, 3, 8, 2, 9, 4, showing the lists obtained 
+at each outer step.
+
+
+
+\end{enumerate}
+
+\end{document}
