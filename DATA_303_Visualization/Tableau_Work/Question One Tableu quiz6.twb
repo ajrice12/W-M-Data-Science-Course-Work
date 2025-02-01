@@ -1,0 +1,1282 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Quiz6 Data 1+' inline='true' name='federated.0yngq5y0kqe7q11fgxw8q0j9d8zw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Quiz6 Data 1' name='textscan.049h5pu1fk5no418cddvs02e8d49'>
+            <connection class='textscan' directory='C:/Users/shann/Downloads' filename='Quiz6 Data 1.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[Quiz6 Data 2.csv].[state]' />
+              <expression op='[Quiz6 Data 3.csv].[State]' />
+            </expression>
+          </clause>
+          <relation join='inner' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[Quiz6 Data 1.csv].[state]' />
+                <expression op='[Quiz6 Data 2.csv].[st]' />
+              </expression>
+            </clause>
+            <relation connection='textscan.049h5pu1fk5no418cddvs02e8d49' name='Quiz6 Data 1.csv' table='[Quiz6 Data 1#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                <column datatype='date' name='date' ordinal='0' />
+                <column datatype='string' name='state' ordinal='1' />
+                <column datatype='integer' name='positive' ordinal='2' />
+                <column datatype='integer' name='probableCases' ordinal='3' />
+                <column datatype='integer' name='negative' ordinal='4' />
+                <column datatype='integer' name='pending' ordinal='5' />
+                <column datatype='string' name='totalTestResultsSource' ordinal='6' />
+                <column datatype='integer' name='totalTestResults' ordinal='7' />
+                <column datatype='integer' name='hospitalizedCurrently' ordinal='8' />
+                <column datatype='integer' name='hospitalizedCumulative' ordinal='9' />
+                <column datatype='integer' name='inIcuCurrently' ordinal='10' />
+                <column datatype='integer' name='inIcuCumulative' ordinal='11' />
+                <column datatype='integer' name='onVentilatorCurrently' ordinal='12' />
+                <column datatype='integer' name='onVentilatorCumulative' ordinal='13' />
+                <column datatype='integer' name='recovered' ordinal='14' />
+                <column datatype='datetime' name='lastUpdateEt' ordinal='15' />
+                <column datatype='datetime' name='dateModified' ordinal='16' />
+                <column datatype='string' name='checkTimeEt' ordinal='17' />
+                <column datatype='integer' name='death' ordinal='18' />
+                <column datatype='integer' name='hospitalized' ordinal='19' />
+                <column datatype='integer' name='hospitalizedDischarged' ordinal='20' />
+                <column datatype='datetime' name='dateChecked' ordinal='21' />
+                <column datatype='integer' name='totalTestsViral' ordinal='22' />
+                <column datatype='integer' name='positiveTestsViral' ordinal='23' />
+                <column datatype='integer' name='negativeTestsViral' ordinal='24' />
+                <column datatype='integer' name='positiveCasesViral' ordinal='25' />
+                <column datatype='integer' name='deathConfirmed' ordinal='26' />
+                <column datatype='integer' name='deathProbable' ordinal='27' />
+                <column datatype='integer' name='totalTestEncountersViral' ordinal='28' />
+                <column datatype='integer' name='totalTestsPeopleViral' ordinal='29' />
+                <column datatype='integer' name='totalTestsAntibody' ordinal='30' />
+                <column datatype='integer' name='positiveTestsAntibody' ordinal='31' />
+                <column datatype='integer' name='negativeTestsAntibody' ordinal='32' />
+                <column datatype='integer' name='totalTestsPeopleAntibody' ordinal='33' />
+                <column datatype='integer' name='positiveTestsPeopleAntibody' ordinal='34' />
+                <column datatype='integer' name='negativeTestsPeopleAntibody' ordinal='35' />
+                <column datatype='integer' name='totalTestsPeopleAntigen' ordinal='36' />
+                <column datatype='integer' name='positiveTestsPeopleAntigen' ordinal='37' />
+                <column datatype='integer' name='totalTestsAntigen' ordinal='38' />
+                <column datatype='integer' name='positiveTestsAntigen' ordinal='39' />
+                <column datatype='integer' name='fips' ordinal='40' />
+                <column datatype='integer' name='positiveIncrease' ordinal='41' />
+                <column datatype='integer' name='negativeIncrease' ordinal='42' />
+                <column datatype='integer' name='total' ordinal='43' />
+                <column datatype='integer' name='totalTestResultsIncrease' ordinal='44' />
+                <column datatype='integer' name='posNeg' ordinal='45' />
+                <column datatype='string' name='dataQualityGrade' ordinal='46' />
+                <column datatype='integer' name='deathIncrease' ordinal='47' />
+                <column datatype='integer' name='hospitalizedIncrease' ordinal='48' />
+                <column datatype='string' name='hash' ordinal='49' />
+                <column datatype='integer' name='commercialScore' ordinal='50' />
+                <column datatype='integer' name='negativeRegularScore' ordinal='51' />
+                <column datatype='integer' name='negativeScore' ordinal='52' />
+                <column datatype='integer' name='positiveScore' ordinal='53' />
+                <column datatype='integer' name='score' ordinal='54' />
+                <column datatype='string' name='grade' ordinal='55' />
+              </columns>
+            </relation>
+            <relation connection='textscan.049h5pu1fk5no418cddvs02e8d49' name='Quiz6 Data 2.csv' table='[Quiz6 Data 2#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                <column datatype='string' name='state' ordinal='0' />
+                <column datatype='string' name='st' ordinal='1' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='textscan.049h5pu1fk5no418cddvs02e8d49' name='Quiz6 Data 3.csv' table='[Quiz6 Data 3#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='State' ordinal='0' />
+              <column datatype='integer' name='pop2019est' ordinal='1' />
+              <column datatype='real' name='LandSqMi' ordinal='2' />
+              <column datatype='real' name='LandSqKM' ordinal='3' />
+              <column datatype='real' name='PopPerSqMi' ordinal='4' />
+              <column datatype='real' name='PopPerSqKM' ordinal='5' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[LandSqKM]' value='[Quiz6 Data 3.csv].[LandSqKM]' />
+          <map key='[LandSqMi]' value='[Quiz6 Data 3.csv].[LandSqMi]' />
+          <map key='[PopPerSqKM]' value='[Quiz6 Data 3.csv].[PopPerSqKM]' />
+          <map key='[PopPerSqMi]' value='[Quiz6 Data 3.csv].[PopPerSqMi]' />
+          <map key='[State]' value='[Quiz6 Data 3.csv].[State]' />
+          <map key='[checkTimeEt]' value='[Quiz6 Data 1.csv].[checkTimeEt]' />
+          <map key='[commercialScore]' value='[Quiz6 Data 1.csv].[commercialScore]' />
+          <map key='[dataQualityGrade]' value='[Quiz6 Data 1.csv].[dataQualityGrade]' />
+          <map key='[dateChecked]' value='[Quiz6 Data 1.csv].[dateChecked]' />
+          <map key='[dateModified]' value='[Quiz6 Data 1.csv].[dateModified]' />
+          <map key='[date]' value='[Quiz6 Data 1.csv].[date]' />
+          <map key='[deathConfirmed]' value='[Quiz6 Data 1.csv].[deathConfirmed]' />
+          <map key='[deathIncrease]' value='[Quiz6 Data 1.csv].[deathIncrease]' />
+          <map key='[deathProbable]' value='[Quiz6 Data 1.csv].[deathProbable]' />
+          <map key='[death]' value='[Quiz6 Data 1.csv].[death]' />
+          <map key='[fips]' value='[Quiz6 Data 1.csv].[fips]' />
+          <map key='[grade]' value='[Quiz6 Data 1.csv].[grade]' />
+          <map key='[hash]' value='[Quiz6 Data 1.csv].[hash]' />
+          <map key='[hospitalizedCumulative]' value='[Quiz6 Data 1.csv].[hospitalizedCumulative]' />
+          <map key='[hospitalizedCurrently]' value='[Quiz6 Data 1.csv].[hospitalizedCurrently]' />
+          <map key='[hospitalizedDischarged]' value='[Quiz6 Data 1.csv].[hospitalizedDischarged]' />
+          <map key='[hospitalizedIncrease]' value='[Quiz6 Data 1.csv].[hospitalizedIncrease]' />
+          <map key='[hospitalized]' value='[Quiz6 Data 1.csv].[hospitalized]' />
+          <map key='[inIcuCumulative]' value='[Quiz6 Data 1.csv].[inIcuCumulative]' />
+          <map key='[inIcuCurrently]' value='[Quiz6 Data 1.csv].[inIcuCurrently]' />
+          <map key='[lastUpdateEt]' value='[Quiz6 Data 1.csv].[lastUpdateEt]' />
+          <map key='[negativeIncrease]' value='[Quiz6 Data 1.csv].[negativeIncrease]' />
+          <map key='[negativeRegularScore]' value='[Quiz6 Data 1.csv].[negativeRegularScore]' />
+          <map key='[negativeScore]' value='[Quiz6 Data 1.csv].[negativeScore]' />
+          <map key='[negativeTestsAntibody]' value='[Quiz6 Data 1.csv].[negativeTestsAntibody]' />
+          <map key='[negativeTestsPeopleAntibody]' value='[Quiz6 Data 1.csv].[negativeTestsPeopleAntibody]' />
+          <map key='[negativeTestsViral]' value='[Quiz6 Data 1.csv].[negativeTestsViral]' />
+          <map key='[negative]' value='[Quiz6 Data 1.csv].[negative]' />
+          <map key='[onVentilatorCumulative]' value='[Quiz6 Data 1.csv].[onVentilatorCumulative]' />
+          <map key='[onVentilatorCurrently]' value='[Quiz6 Data 1.csv].[onVentilatorCurrently]' />
+          <map key='[pending]' value='[Quiz6 Data 1.csv].[pending]' />
+          <map key='[pop2019est]' value='[Quiz6 Data 3.csv].[pop2019est]' />
+          <map key='[posNeg]' value='[Quiz6 Data 1.csv].[posNeg]' />
+          <map key='[positiveCasesViral]' value='[Quiz6 Data 1.csv].[positiveCasesViral]' />
+          <map key='[positiveIncrease]' value='[Quiz6 Data 1.csv].[positiveIncrease]' />
+          <map key='[positiveScore]' value='[Quiz6 Data 1.csv].[positiveScore]' />
+          <map key='[positiveTestsAntibody]' value='[Quiz6 Data 1.csv].[positiveTestsAntibody]' />
+          <map key='[positiveTestsAntigen]' value='[Quiz6 Data 1.csv].[positiveTestsAntigen]' />
+          <map key='[positiveTestsPeopleAntibody]' value='[Quiz6 Data 1.csv].[positiveTestsPeopleAntibody]' />
+          <map key='[positiveTestsPeopleAntigen]' value='[Quiz6 Data 1.csv].[positiveTestsPeopleAntigen]' />
+          <map key='[positiveTestsViral]' value='[Quiz6 Data 1.csv].[positiveTestsViral]' />
+          <map key='[positive]' value='[Quiz6 Data 1.csv].[positive]' />
+          <map key='[probableCases]' value='[Quiz6 Data 1.csv].[probableCases]' />
+          <map key='[recovered]' value='[Quiz6 Data 1.csv].[recovered]' />
+          <map key='[score]' value='[Quiz6 Data 1.csv].[score]' />
+          <map key='[st]' value='[Quiz6 Data 2.csv].[st]' />
+          <map key='[state (Quiz6 Data 2.csv)]' value='[Quiz6 Data 2.csv].[state]' />
+          <map key='[state]' value='[Quiz6 Data 1.csv].[state]' />
+          <map key='[totalTestEncountersViral]' value='[Quiz6 Data 1.csv].[totalTestEncountersViral]' />
+          <map key='[totalTestResultsIncrease]' value='[Quiz6 Data 1.csv].[totalTestResultsIncrease]' />
+          <map key='[totalTestResultsSource]' value='[Quiz6 Data 1.csv].[totalTestResultsSource]' />
+          <map key='[totalTestResults]' value='[Quiz6 Data 1.csv].[totalTestResults]' />
+          <map key='[totalTestsAntibody]' value='[Quiz6 Data 1.csv].[totalTestsAntibody]' />
+          <map key='[totalTestsAntigen]' value='[Quiz6 Data 1.csv].[totalTestsAntigen]' />
+          <map key='[totalTestsPeopleAntibody]' value='[Quiz6 Data 1.csv].[totalTestsPeopleAntibody]' />
+          <map key='[totalTestsPeopleAntigen]' value='[Quiz6 Data 1.csv].[totalTestsPeopleAntigen]' />
+          <map key='[totalTestsPeopleViral]' value='[Quiz6 Data 1.csv].[totalTestsPeopleViral]' />
+          <map key='[totalTestsViral]' value='[Quiz6 Data 1.csv].[totalTestsViral]' />
+          <map key='[total]' value='[Quiz6 Data 1.csv].[total]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Quiz6 Data 2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Quiz6 Data 3.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>positive</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[positive]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>positive</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>probableCases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[probableCases]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>probableCases</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>negative</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[negative]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>negative</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pending</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pending]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>pending</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totalTestResultsSource</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[totalTestResultsSource]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>totalTestResultsSource</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totalTestResults</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[totalTestResults]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>totalTestResults</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hospitalizedCurrently</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hospitalizedCurrently]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>hospitalizedCurrently</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hospitalizedCumulative</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hospitalizedCumulative]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>hospitalizedCumulative</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inIcuCurrently</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[inIcuCurrently]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>inIcuCurrently</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inIcuCumulative</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[inIcuCumulative]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>inIcuCumulative</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>onVentilatorCurrently</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[onVentilatorCurrently]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>onVentilatorCurrently</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>onVentilatorCumulative</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[onVentilatorCumulative]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>onVentilatorCumulative</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recovered</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[recovered]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>recovered</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lastUpdateEt</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[lastUpdateEt]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>lastUpdateEt</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dateModified</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[dateModified]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>dateModified</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>checkTimeEt</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[checkTimeEt]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>checkTimeEt</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>death</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[death]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>death</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hospitalized</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hospitalized]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>hospitalized</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hospitalizedDischarged</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hospitalizedDischarged]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>hospitalizedDischarged</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dateChecked</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[dateChecked]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>dateChecked</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totalTestsViral</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[totalTestsViral]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>totalTestsViral</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>positiveTestsViral</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[positiveTestsViral]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>positiveTestsViral</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>negativeTestsViral</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[negativeTestsViral]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>negativeTestsViral</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>positiveCasesViral</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[positiveCasesViral]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>positiveCasesViral</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deathConfirmed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[deathConfirmed]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>deathConfirmed</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deathProbable</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[deathProbable]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>deathProbable</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totalTestEncountersViral</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[totalTestEncountersViral]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>totalTestEncountersViral</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totalTestsPeopleViral</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[totalTestsPeopleViral]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>totalTestsPeopleViral</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totalTestsAntibody</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[totalTestsAntibody]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>totalTestsAntibody</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>positiveTestsAntibody</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[positiveTestsAntibody]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>positiveTestsAntibody</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>negativeTestsAntibody</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[negativeTestsAntibody]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>negativeTestsAntibody</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totalTestsPeopleAntibody</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[totalTestsPeopleAntibody]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>totalTestsPeopleAntibody</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>positiveTestsPeopleAntibody</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[positiveTestsPeopleAntibody]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>positiveTestsPeopleAntibody</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>negativeTestsPeopleAntibody</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[negativeTestsPeopleAntibody]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>negativeTestsPeopleAntibody</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totalTestsPeopleAntigen</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[totalTestsPeopleAntigen]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>totalTestsPeopleAntigen</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>positiveTestsPeopleAntigen</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[positiveTestsPeopleAntigen]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>positiveTestsPeopleAntigen</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totalTestsAntigen</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[totalTestsAntigen]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>totalTestsAntigen</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>positiveTestsAntigen</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[positiveTestsAntigen]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>positiveTestsAntigen</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fips</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fips]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>fips</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>positiveIncrease</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[positiveIncrease]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>positiveIncrease</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>negativeIncrease</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[negativeIncrease]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>negativeIncrease</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>total</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totalTestResultsIncrease</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[totalTestResultsIncrease]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>totalTestResultsIncrease</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>posNeg</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[posNeg]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>posNeg</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dataQualityGrade</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dataQualityGrade]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>dataQualityGrade</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deathIncrease</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[deathIncrease]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>deathIncrease</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hospitalizedIncrease</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hospitalizedIncrease]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>hospitalizedIncrease</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hash</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hash]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>hash</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>commercialScore</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[commercialScore]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>commercialScore</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>negativeRegularScore</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[negativeRegularScore]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>negativeRegularScore</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>negativeScore</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[negativeScore]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>negativeScore</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>positiveScore</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[positiveScore]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>positiveScore</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[score]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>score</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>grade</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[grade]</local-name>
+            <parent-name>[Quiz6 Data 1.csv]</parent-name>
+            <remote-alias>grade</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state (Quiz6 Data 2.csv)]</local-name>
+            <parent-name>[Quiz6 Data 2.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>st</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[st]</local-name>
+            <parent-name>[Quiz6 Data 2.csv]</parent-name>
+            <remote-alias>st</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Quiz6 Data 3.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pop2019est</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pop2019est]</local-name>
+            <parent-name>[Quiz6 Data 3.csv]</parent-name>
+            <remote-alias>pop2019est</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LandSqMi</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LandSqMi]</local-name>
+            <parent-name>[Quiz6 Data 3.csv]</parent-name>
+            <remote-alias>LandSqMi</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LandSqKM</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LandSqKM]</local-name>
+            <parent-name>[Quiz6 Data 3.csv]</parent-name>
+            <remote-alias>LandSqKM</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PopPerSqMi</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PopPerSqMi]</local-name>
+            <parent-name>[Quiz6 Data 3.csv]</parent-name>
+            <remote-alias>PopPerSqMi</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PopPerSqKM</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PopPerSqKM]</local-name>
+            <parent-name>[Quiz6 Data 3.csv]</parent-name>
+            <remote-alias>PopPerSqKM</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Land Sq KM' datatype='real' name='[LandSqKM]' role='measure' type='quantitative' />
+      <column caption='Land Sq Mi' datatype='real' name='[LandSqMi]' role='measure' type='quantitative' />
+      <column caption='Pop Per Sq KM' datatype='real' name='[PopPerSqKM]' role='measure' type='quantitative' />
+      <column caption='Pop Per Sq Mi' datatype='real' name='[PopPerSqMi]' role='measure' type='quantitative' />
+      <column caption='State1' datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Quiz6 Data 1.csv' datatype='table' name='[__tableau_internal_object_id__].[Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA]' role='measure' type='quantitative' />
+      <column caption='Check Time Et' datatype='string' name='[checkTimeEt]' role='dimension' type='nominal' />
+      <column caption='Commercial Score' datatype='integer' name='[commercialScore]' role='measure' type='quantitative' />
+      <column caption='Data Quality Grade' datatype='string' name='[dataQualityGrade]' role='dimension' type='nominal' />
+      <column caption='Date Checked' datatype='datetime' name='[dateChecked]' role='dimension' type='ordinal' />
+      <column caption='Date Modified' datatype='datetime' name='[dateModified]' role='dimension' type='ordinal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Death Confirmed' datatype='integer' name='[deathConfirmed]' role='measure' type='quantitative' />
+      <column caption='Death Increase' datatype='integer' name='[deathIncrease]' role='measure' type='quantitative' />
+      <column caption='Death Probable' datatype='integer' name='[deathProbable]' role='measure' type='quantitative' />
+      <column caption='Death' datatype='integer' name='[death]' role='measure' type='quantitative' />
+      <column caption='Fips' datatype='integer' name='[fips]' role='measure' type='quantitative' />
+      <column caption='Grade' datatype='string' name='[grade]' role='dimension' type='nominal' />
+      <column caption='Hash' datatype='string' name='[hash]' role='dimension' type='nominal' />
+      <column caption='Hospitalized Cumulative' datatype='integer' name='[hospitalizedCumulative]' role='measure' type='quantitative' />
+      <column caption='Hospitalized Currently' datatype='integer' name='[hospitalizedCurrently]' role='measure' type='quantitative' />
+      <column caption='Hospitalized Discharged' datatype='integer' name='[hospitalizedDischarged]' role='measure' type='quantitative' />
+      <column caption='Hospitalized Increase' datatype='integer' name='[hospitalizedIncrease]' role='measure' type='quantitative' />
+      <column caption='Hospitalized' datatype='integer' name='[hospitalized]' role='measure' type='quantitative' />
+      <column caption='In Icu Cumulative' datatype='integer' name='[inIcuCumulative]' role='measure' type='quantitative' />
+      <column caption='In Icu Currently' datatype='integer' name='[inIcuCurrently]' role='measure' type='quantitative' />
+      <column caption='Last Update Et' datatype='datetime' name='[lastUpdateEt]' role='dimension' type='ordinal' />
+      <column caption='Negative Increase' datatype='integer' name='[negativeIncrease]' role='measure' type='quantitative' />
+      <column caption='Negative Regular Score' datatype='integer' name='[negativeRegularScore]' role='measure' type='quantitative' />
+      <column caption='Negative Score' datatype='integer' name='[negativeScore]' role='measure' type='quantitative' />
+      <column caption='Negative Tests Antibody' datatype='integer' name='[negativeTestsAntibody]' role='measure' type='quantitative' />
+      <column caption='Negative Tests People Antibody' datatype='integer' name='[negativeTestsPeopleAntibody]' role='measure' type='quantitative' />
+      <column caption='Negative Tests Viral' datatype='integer' name='[negativeTestsViral]' role='measure' type='quantitative' />
+      <column caption='Negative' datatype='integer' name='[negative]' role='measure' type='quantitative' />
+      <column caption='On Ventilator Cumulative' datatype='integer' name='[onVentilatorCumulative]' role='measure' type='quantitative' />
+      <column caption='On Ventilator Currently' datatype='integer' name='[onVentilatorCurrently]' role='measure' type='quantitative' />
+      <column caption='Pending' datatype='integer' name='[pending]' role='measure' type='quantitative' />
+      <column caption='Pop2019Est' datatype='integer' name='[pop2019est]' role='measure' type='quantitative' />
+      <column caption='Pos Neg' datatype='integer' name='[posNeg]' role='measure' type='quantitative' />
+      <column caption='Positive Cases Viral' datatype='integer' name='[positiveCasesViral]' role='measure' type='quantitative' />
+      <column caption='Positive Increase' datatype='integer' name='[positiveIncrease]' role='measure' type='quantitative' />
+      <column caption='Positive Score' datatype='integer' name='[positiveScore]' role='measure' type='quantitative' />
+      <column caption='Positive Tests Antibody' datatype='integer' name='[positiveTestsAntibody]' role='measure' type='quantitative' />
+      <column caption='Positive Tests Antigen' datatype='integer' name='[positiveTestsAntigen]' role='measure' type='quantitative' />
+      <column caption='Positive Tests People Antibody' datatype='integer' name='[positiveTestsPeopleAntibody]' role='measure' type='quantitative' />
+      <column caption='Positive Tests People Antigen' datatype='integer' name='[positiveTestsPeopleAntigen]' role='measure' type='quantitative' />
+      <column caption='Positive Tests Viral' datatype='integer' name='[positiveTestsViral]' role='measure' type='quantitative' />
+      <column caption='Positive' datatype='integer' name='[positive]' role='measure' type='quantitative' />
+      <column caption='Probable Cases' datatype='integer' name='[probableCases]' role='measure' type='quantitative' />
+      <column caption='Recovered' datatype='integer' name='[recovered]' role='measure' type='quantitative' />
+      <column caption='Score' datatype='integer' name='[score]' role='measure' type='quantitative' />
+      <column caption='St' datatype='string' name='[st]' role='dimension' type='nominal' />
+      <column datatype='string' name='[state (Quiz6 Data 2.csv)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Total Test Encounters Viral' datatype='integer' name='[totalTestEncountersViral]' role='measure' type='quantitative' />
+      <column caption='Total Test Results Increase' datatype='integer' name='[totalTestResultsIncrease]' role='measure' type='quantitative' />
+      <column caption='Total Test Results Source' datatype='string' name='[totalTestResultsSource]' role='dimension' type='nominal' />
+      <column caption='Total Test Results' datatype='integer' name='[totalTestResults]' role='measure' type='quantitative' />
+      <column caption='Total Tests Antibody' datatype='integer' name='[totalTestsAntibody]' role='measure' type='quantitative' />
+      <column caption='Total Tests Antigen' datatype='integer' name='[totalTestsAntigen]' role='measure' type='quantitative' />
+      <column caption='Total Tests People Antibody' datatype='integer' name='[totalTestsPeopleAntibody]' role='measure' type='quantitative' />
+      <column caption='Total Tests People Antigen' datatype='integer' name='[totalTestsPeopleAntigen]' role='measure' type='quantitative' />
+      <column caption='Total Tests People Viral' datatype='integer' name='[totalTestsPeopleViral]' role='measure' type='quantitative' />
+      <column caption='Total Tests Viral' datatype='integer' name='[totalTestsViral]' role='measure' type='quantitative' />
+      <column caption='Total' datatype='integer' name='[total]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Quiz6 Data 1.csv' id='Quiz6 Data 1.csv_7680439483CC4A0EBF9971B4E535D5FA'>
+            <properties context=''>
+              <relation join='inner' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[Quiz6 Data 2.csv].[state]' />
+                    <expression op='[Quiz6 Data 3.csv].[State]' />
+                  </expression>
+                </clause>
+                <relation join='inner' type='join'>
+                  <clause type='join'>
+                    <expression op='='>
+                      <expression op='[Quiz6 Data 1.csv].[state]' />
+                      <expression op='[Quiz6 Data 2.csv].[st]' />
+                    </expression>
+                  </clause>
+                  <relation connection='textscan.049h5pu1fk5no418cddvs02e8d49' name='Quiz6 Data 1.csv' table='[Quiz6 Data 1#csv]' type='table'>
+                    <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                      <column datatype='date' name='date' ordinal='0' />
+                      <column datatype='string' name='state' ordinal='1' />
+                      <column datatype='integer' name='positive' ordinal='2' />
+                      <column datatype='integer' name='probableCases' ordinal='3' />
+                      <column datatype='integer' name='negative' ordinal='4' />
+                      <column datatype='integer' name='pending' ordinal='5' />
+                      <column datatype='string' name='totalTestResultsSource' ordinal='6' />
+                      <column datatype='integer' name='totalTestResults' ordinal='7' />
+                      <column datatype='integer' name='hospitalizedCurrently' ordinal='8' />
+                      <column datatype='integer' name='hospitalizedCumulative' ordinal='9' />
+                      <column datatype='integer' name='inIcuCurrently' ordinal='10' />
+                      <column datatype='integer' name='inIcuCumulative' ordinal='11' />
+                      <column datatype='integer' name='onVentilatorCurrently' ordinal='12' />
+                      <column datatype='integer' name='onVentilatorCumulative' ordinal='13' />
+                      <column datatype='integer' name='recovered' ordinal='14' />
+                      <column datatype='datetime' name='lastUpdateEt' ordinal='15' />
+                      <column datatype='datetime' name='dateModified' ordinal='16' />
+                      <column datatype='string' name='checkTimeEt' ordinal='17' />
+                      <column datatype='integer' name='death' ordinal='18' />
+                      <column datatype='integer' name='hospitalized' ordinal='19' />
+                      <column datatype='integer' name='hospitalizedDischarged' ordinal='20' />
+                      <column datatype='datetime' name='dateChecked' ordinal='21' />
+                      <column datatype='integer' name='totalTestsViral' ordinal='22' />
+                      <column datatype='integer' name='positiveTestsViral' ordinal='23' />
+                      <column datatype='integer' name='negativeTestsViral' ordinal='24' />
+                      <column datatype='integer' name='positiveCasesViral' ordinal='25' />
+                      <column datatype='integer' name='deathConfirmed' ordinal='26' />
+                      <column datatype='integer' name='deathProbable' ordinal='27' />
+                      <column datatype='integer' name='totalTestEncountersViral' ordinal='28' />
+                      <column datatype='integer' name='totalTestsPeopleViral' ordinal='29' />
+                      <column datatype='integer' name='totalTestsAntibody' ordinal='30' />
+                      <column datatype='integer' name='positiveTestsAntibody' ordinal='31' />
+                      <column datatype='integer' name='negativeTestsAntibody' ordinal='32' />
+                      <column datatype='integer' name='totalTestsPeopleAntibody' ordinal='33' />
+                      <column datatype='integer' name='positiveTestsPeopleAntibody' ordinal='34' />
+                      <column datatype='integer' name='negativeTestsPeopleAntibody' ordinal='35' />
+                      <column datatype='integer' name='totalTestsPeopleAntigen' ordinal='36' />
+                      <column datatype='integer' name='positiveTestsPeopleAntigen' ordinal='37' />
+                      <column datatype='integer' name='totalTestsAntigen' ordinal='38' />
+                      <column datatype='integer' name='positiveTestsAntigen' ordinal='39' />
+                      <column datatype='integer' name='fips' ordinal='40' />
+                      <column datatype='integer' name='positiveIncrease' ordinal='41' />
+                      <column datatype='integer' name='negativeIncrease' ordinal='42' />
+                      <column datatype='integer' name='total' ordinal='43' />
+                      <column datatype='integer' name='totalTestResultsIncrease' ordinal='44' />
+                      <column datatype='integer' name='posNeg' ordinal='45' />
+                      <column datatype='string' name='dataQualityGrade' ordinal='46' />
+                      <column datatype='integer' name='deathIncrease' ordinal='47' />
+                      <column datatype='integer' name='hospitalizedIncrease' ordinal='48' />
+                      <column datatype='string' name='hash' ordinal='49' />
+                      <column datatype='integer' name='commercialScore' ordinal='50' />
+                      <column datatype='integer' name='negativeRegularScore' ordinal='51' />
+                      <column datatype='integer' name='negativeScore' ordinal='52' />
+                      <column datatype='integer' name='positiveScore' ordinal='53' />
+                      <column datatype='integer' name='score' ordinal='54' />
+                      <column datatype='string' name='grade' ordinal='55' />
+                    </columns>
+                  </relation>
+                  <relation connection='textscan.049h5pu1fk5no418cddvs02e8d49' name='Quiz6 Data 2.csv' table='[Quiz6 Data 2#csv]' type='table'>
+                    <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                      <column datatype='string' name='state' ordinal='0' />
+                      <column datatype='string' name='st' ordinal='1' />
+                    </columns>
+                  </relation>
+                </relation>
+                <relation connection='textscan.049h5pu1fk5no418cddvs02e8d49' name='Quiz6 Data 3.csv' table='[Quiz6 Data 3#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='State' ordinal='0' />
+                    <column datatype='integer' name='pop2019est' ordinal='1' />
+                    <column datatype='real' name='LandSqMi' ordinal='2' />
+                    <column datatype='real' name='LandSqKM' ordinal='3' />
+                    <column datatype='real' name='PopPerSqMi' ordinal='4' />
+                    <column datatype='real' name='PopPerSqKM' ordinal='5' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{AD9006AD-B4E0-4F90-98F3-174C6C3633B4}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.125' source-height='32'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F45AAAE0-3539-4E19-98F2-822382E3938F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAABCbAAAQmwF0iZxL
+      AAAFXUlEQVR4nO3VMQEAIAzAMMC/5yFjRxMF/XpnZg4AOW87AIAdBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEfFxoG/IiMv0YAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
